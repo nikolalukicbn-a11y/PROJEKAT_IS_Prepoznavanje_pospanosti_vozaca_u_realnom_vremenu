@@ -1,0 +1,7 @@
+names:
+- pospan
+- budan
+nc: 2
+path: .
+train: train/images
+val: val/images

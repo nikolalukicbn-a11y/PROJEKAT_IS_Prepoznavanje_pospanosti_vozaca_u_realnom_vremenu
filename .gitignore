@@ -1,0 +1,26 @@
+# Veliki data fajlovi
+trening+val.tar
+test_finale.zip
+yolo_trening_rezultati.zip
+
+# Dataset i podeljeni podaci
+dataset/
+train/
+val/
+test_dataset/
+
+# Trenirani modeli (preveliki)
+best.pt
+yolov8n.pt
+
+# Output folderi
+runs/
+training_logs/
+validation_viz/
+epoch_comparison/
+inference_results/
+test_results/
+
+# Python cache
+__pycache__/
+*.pyc
