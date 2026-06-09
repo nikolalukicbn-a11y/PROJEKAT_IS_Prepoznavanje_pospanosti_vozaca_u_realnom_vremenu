@@ -1,7 +1,7 @@
 [project]
 name = "projekat-is-finale"
 version = "0.1.0"
-description = "Add your description here"
+description = "YOLOv8 detekcija pospanosti — inteligentni finale"
 readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [
