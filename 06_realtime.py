@@ -23,7 +23,8 @@ sys.stdout.reconfigure(encoding='utf-8')
 # ============================================================
 CONF_THRESHOLD = 0.55
 AGNOSTIC_NMS = True
-IOU_THRESHOLD = 0.7
+IOU_THRESHOLD = 0.5
+MAX_DET = 1
 TARGET_FPS = 50
 CAMERA_ID = 0
 
@@ -137,7 +138,7 @@ def main():
         frame_count += 1
         fps_counter += 1
 
-        results = model(frame, conf=CONF_THRESHOLD, iou=IOU_THRESHOLD, agnostic_nms=AGNOSTIC_NMS, verbose=False)
+        results = model(frame, conf=CONF_THRESHOLD, iou=IOU_THRESHOLD, agnostic_nms=AGNOSTIC_NMS, max_det=MAX_DET, verbose=False)
 
         now = time.perf_counter()
         elapsed = now - fps_start
