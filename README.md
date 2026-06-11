@@ -51,4 +51,4 @@ results = model('slika.jpg', conf=0.55, agnostic_nms=True)
 
 ## Autor
 
-Nikola Lukić — Jun 2026
+Nikola Lukić, Marija Blagojević, Daria Obradović — Jun 2026
