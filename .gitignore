@@ -14,6 +14,7 @@ validation_viz/
 epoch_comparison/
 inference_results/
 test_results/
+exported_models/
 
 # Python cache
 __pycache__/
