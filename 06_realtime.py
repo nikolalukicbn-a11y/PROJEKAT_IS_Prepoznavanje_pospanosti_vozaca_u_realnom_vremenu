@@ -24,7 +24,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 CONF_THRESHOLD = 0.55
 AGNOSTIC_NMS = True
 IOU_THRESHOLD = 0.7
-TARGET_FPS = 30
+TARGET_FPS = 50
 CAMERA_ID = 0
 
 CLASS_NAMES = {0: 'POSPAN', 1: 'BUDAN'}
@@ -112,7 +112,7 @@ def main():
 
     cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
     cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
-    cap.set(cv2.CAP_PROP_FPS, TARGET_FPS)
+    cap.set(cv2.CAP_PROP_FPS, 50)
 
     actual_fps = cap.get(cv2.CAP_PROP_FPS)
     print(f"   Kamera: {int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))}x{int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))} @ {actual_fps:.0f} FPS")
